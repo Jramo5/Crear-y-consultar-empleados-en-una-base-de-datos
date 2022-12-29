@@ -1,0 +1,215 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid blue  ; */
+}
+
+body{
+    background-color: #449dd15e;
+}
+
+main{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 99%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+form{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    margin-right: 6px;
+    font-size: 17px;
+}
+
+input::placeholder{
+    color: rgb(190, 190, 190);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+
+input[type="text"]{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+    width: 70%;
+    height: 25px;   
+}
+
+select{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+/* FIN ESTILOS GENERALES */
+
+/* ESTILOS PARA REGISTRAR UN NUEVO EMPLEADO */
+
+div.container{
+    margin: auto;
+    width: 40%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(231, 228, 228);
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 5px 8px 4px -4px rgba(0,0,0,0.71);
+}
+
+.ocultar-Registro, .ocultar-consulta{
+    display: none;
+}
+
+.button{
+    margin: 10px;
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    color: #fff;
+    background-color: #449DD1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #449DD1;
+    border: 1px solid;
+}
+
+
+
+.Registro-form{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form_content{
+    /* border: 1px solid navy; */
+    width: 80%;
+}
+
+.form_content h2{
+    text-align: center;
+}
+
+.form_content > div{
+    padding: 6px;
+}
+
+.area_dui{
+    margin-top: 5px;
+}
+
+.btn_enviar{
+    margin: auto;
+    display: block;
+    width: 60%;
+    height: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(67, 167, 67);
+    cursor: pointer;
+}
+
+
+.button-consulta{
+    width: 70%;
+    font-size: 15px;
+}
+
+/* FIN DE LOS ESTILOS PARA REGISTRAR UN NUEVO EMPLEADO */
+
+/* ESTILOS PARA CONSULTAR UN EMPLEADO */
+
+.form-consultar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-consultar h2{
+    font-size: 19px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.btn_consultar{
+    width: 100%;
+}
+
+.btnConsultar{
+    margin: 10px auto;
+    display: block;
+    width: 70%;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(247, 98, 44);
+
+}
+
+.btnRegistro{
+    margin: auto;
+    width: 100%;
+}
+
+/* FIN DE LOS ESTILOS PARA CONSULTAR UN EMPLEADO */
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]#Registro:checked ~ .ocultar-Registro {
+    display: block;
+    width: 100%;
+}
+
+input[type="radio"]#Consultar:checked ~ .ocultar-consulta {
+    display: block;
+    width: 100%;
+}
+
+.btnRegistrar{
+    text-decoration: none !important;
+}

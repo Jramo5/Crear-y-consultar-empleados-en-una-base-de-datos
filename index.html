@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Empleados</title>
+</head>
+
+<body>
+    
+    <main>
+        <div class="container">
+            <button id="Registro" class="button">Registrar un nuevo empleado</button>
+            <div class="ocultar-Registro" id="ocultar-Registro">
+                <div id="Registro-form" class="Registro-form">
+                    <form name="form" action="db-empleado.php" method="post" onsubmit="return validacion()" class="form">
+                        <div class="form_content">
+                            <h2>Ingrese los datos solicitados</h2>
+                            <div class="area_dui">
+                                <label for="no_dui">NO DUI:</label>
+                                <input type="text" name="no_dui" id="no_dui" placeholder="XXXXXXXX">
+                            </div>
+                            <div class="area_nombres">
+                                <label for="nombres">Nombres:</label>
+                                <input type="text" name="nombres" id="nombres" placeholder="José Manuel">
+                            </div>
+                            <div class="area_cargo">
+                                <label for="cargo">Cargo:</label>
+                                <select name="cargo" id="cargo">
+                                    <option value="Gerente">Gerente</option>
+                                    <option value="Supervisor">Supervisor</option>
+                                    <option value="Empleado">Empleado</option>
+                                    <option value="Apoyo">Apoyo</option>
+                                    <option value="0" selected disabled>Selecione una opcion</option>
+                                </select>
+                            </div>
+                            <div class="area_departamentos">
+                                <label for="departamentos">Departamentos:</label>
+                                <select name="departamentos" id="departamentos">
+                                    <option value="Santa Ana">Santa Ana</option>
+                                    <option value="Ahuachapan">Ahuachapán</option>
+                                    <option value="Chalatenango">Chalatenango</option>
+                                    <option value="Sonsonate">Sonsonate</option>
+                                    <option value="LaLibertad">La Libertad</option>
+                                    <option value="San Salvador" selected>San Salvador</option>
+                                    <option value="Cuscatlán">Cuscatlán</option>
+                                    <option value="Cabañas">Cabañas</option>
+                                    <option value="San Vicente">San Vicente</option>
+                                    <option value="La Paz">La Paz</option>
+                                    <option value="Usulutan">Usulután</option>
+                                    <option value="San Miguel">San Miguel</option>
+                                    <option value="Morazan">Morazán</option>
+                                    <option value="La Union">La Unión</option>
+                                    <option value="0" selected disabled>Seleccione un departamento</option>
+                                </select>
+                            </div>
+                            <div class="area_salario">
+                                <label for="Salario">Salario</label>
+                                <input type="text" name="salario" id="Salario" placeholder="Salario">
+                            </div>
+                            <div>
+                                <input type="submit" name="registrar" value="Registrar" class="btn_enviar">
+                            </div>
+                        </div>
+                    </form>
+                    <button id="btn-Consultar" class="button button-consulta">Consultar Datos de un empleado</button>
+                </div>
+    
+            </div>
+
+            <button id="Consultar" class="button">Consultar Datos de un empleado</button>
+            <div class="ocultar-consulta" id="ocultar-consulta">
+                <div class="Consultar" id="Consultar-form">
+                    <form name="form" action="db-empleado.php" method="post" id="Consultar-form" class="form-consultar">
+                        <div class="form-consultar">
+                        <h2>Ingrese los datos solicitados</h2>
+                            <div class="area_dui">
+                                <label for="no_dui">DUI:</label>
+                                <input type="text" name="no_dui" id="no_dui" placeholder="XXXXXXXX">
+                            </div>
+                            <div class="btn_consultar">
+                                <input type="submit" name="Consultar" value="Consultar" class="btnConsultar">
+                            </div>
+                        </div>
+                    </form>
+                    <button id="btn-Registro" class="button btnRegistro">Registrar un nuevo empleado</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="js/validacion.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
